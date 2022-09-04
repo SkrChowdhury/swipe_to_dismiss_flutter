@@ -36,6 +36,10 @@ class MyAppState extends State<MyApp> {
           itemBuilder: (context, index) {
             final item = items[index];
             return Dismissible(
+              dismissThresholds: const {
+                DismissDirection.startToEnd: 0.8,
+                DismissDirection.endToStart: 0.8
+              },
               // Each Dismissible must contain a Key. Keys allow Flutter to
               // uniquely identify widgets.
               key: Key(item),
