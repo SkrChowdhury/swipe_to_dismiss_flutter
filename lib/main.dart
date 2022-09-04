@@ -52,7 +52,7 @@ class MyAppState extends State<MyApp> {
                     .showSnackBar(SnackBar(content: Text('$item dismissed')));
               },
               // Show a red background as the item is swiped away.
-              background: Container(color: Colors.red),
+              background: Container(color: Colors.blue),
               child: ListTile(
                 title: Text(item),
               ),
